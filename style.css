@@ -8,14 +8,43 @@
     font: 16px Helvetica, Sans-Serif;
     line-height: 24px;
     background: url(images/metal.jpg);
-    background-color: #80d2ee;
+    background-color: #80eed6;
   }
   .clear {
     clear: both;
   }
 
+  .sticker {
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    background: blue ;
+    color: #fff;
+  }
+
+
+  .container {
+
+
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-between;
+    justify-content: center;
+    height: auto;
+  }
+
+  .container > .box {
+  width: 250px;
+  background: orangered;
+  margin-right: 10px;
+
+  }
+
+
   #page-wrap {
-    width: 800px;
+    width: 1000px;
     margin: 40px auto 60px;
     /* create space around content */
   }
@@ -37,7 +66,7 @@
   }
 
   h2 {
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 255);
     font-size: 16px;
     margin: 0 0 6px 0;
     position: relative;
@@ -45,7 +74,7 @@
 
   /*allows for alternative style definition*/
   h2 span {
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 255);
     position: absolute;
     /*break normal position flow of the stack*/
     bottom: 0;
@@ -125,3 +154,19 @@
     height: 15px;
 
   }
+
+  @keyframes example {
+
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg)}
+}
+
+.spin{
+
+
+/*     animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+
+    animation: example 2s infinite;
+}
